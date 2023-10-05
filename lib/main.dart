@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ambition/pages/home_page.dart'; // Import your page widgets
+import 'package:ambition/pages/home_page.dart';
 import 'package:ambition/pages/explore_page.dart';
 import 'package:ambition/pages/settings_page.dart';
 
@@ -48,7 +48,7 @@ class _NavigationExampleState extends State<NavigationExample> {
           ),
         ),
         centerTitle: true,
-        elevation: 0, // Remove the default shadow
+        elevation: 0,
       ),
       bottomNavigationBar: NavigationBar(
         labelBehavior: labelBehavior,
@@ -64,17 +64,17 @@ class _NavigationExampleState extends State<NavigationExample> {
             label: 'Home',
           ),
           NavigationDestination(
-            icon: Icon(Icons.school), // Academic-related icon
-            label: 'Explore', // Renamed from "Explore"
+            icon: Icon(Icons.school),
+            label: 'Explore',
           ),
           NavigationDestination(
-            selectedIcon: Icon(Icons.settings),
-            icon: Icon(Icons.settings_outlined),
-            label: 'Settings',
+            selectedIcon: Icon(Icons.map), // Map icon for the selected state
+            icon: Icon(Icons.map_outlined), // Map icon for the unselected state
+            label: 'Roadmap', // Rename from "Settings" to "Roadmap"
           ),
         ],
       ),
-      body: pages[currentPageIndex], // Display the selected page
+      body: pages[currentPageIndex],
     );
   }
 }

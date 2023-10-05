@@ -13,9 +13,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home Page'),
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -29,8 +26,8 @@ class HomePage extends StatelessWidget {
                     Image.asset(
                         'assets/priscilla-du-preez-XkKCui44iM0-unsplash.jpg'), // Replace with your image
                     const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text('Card 1'),
+                      padding: EdgeInsets.all(15.0),
+                      child: Text('Life at UMass'),
                     ),
                   ],
                 ),
@@ -45,8 +42,8 @@ class HomePage extends StatelessWidget {
                     Image.asset(
                         'assets/wonderlane-6zlgM-GUd6I-unsplash.jpg'), // Replace with your image
                     const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text('Card 2'),
+                      padding: EdgeInsets.all(15.0),
+                      child: Text('Life at Stanford'),
                     ),
                   ],
                 ),
